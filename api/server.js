@@ -28,6 +28,12 @@ server.use(cors())
 // })
 server.use('/api/auth', authRouter)
 
+server.get('/', (req, res) => {
+  res.json({ message: 'Api is working add a route to see more' });
+  console.log('api is working');
+});
+
+
 server.use((err, req, res, next) => { // eslint-disable-line
   res.status(err.status || 500).json({
     message: err.message,
