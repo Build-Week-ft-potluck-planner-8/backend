@@ -1,53 +1,45 @@
-const router = require('express').Router();
-const bcrypt = require('bcryptjs')
-const Users = require('../users/users-model')
-const { tokenBuilder } = require('./token-builder')
+const router = require("express").Router();
+const bcrypt = require('bcryptjs');
+const tokenBuilder = require('./token-builder');
+const Users = require('../users/users-model');
 const {
-    validateUserBody,
-    checkUserNameFree,
-    validateCredentials
-} = require('./auth-middleware')
+  validateUserName,
+  checkusernameFree,
+  validateCredentials
+} = require('./auth-middleware');
 
-router.post('/register', validateUserBody, checkUserNameFree, (req, res) => {
-    // res.end('implement register, please!');
-    const { username, password } = req.body
-    const rounds = process.env.BCRYPT_ROUNDS || 8
-    const hash = bcrypt.hashSync(password, rounds)
-    const newUser = {
-        username: username,
-        password: hash,
-    }
 
-    Users.add(newUser)
-        .then((user) => {
-            res.status(201).json(user)
-        })
-        .catch((err) => {
-            res.status(500).json(err.message)
-        })
-
+router.post("/register", validateUserName, checkusernameFree, (req, res, next) => {
+    let user = req.user;
+    const rounds = process.env.BCRYPT_ROUNDS || 8;
+    const hash = bcrypt.hashSync(user.password, rounds);
+    
+    user.password = hash;
+    
+    Users.add(user)
+      .then(newUser => {
+        res.status(201).json(newUser[0]);
+      })
+      .catch(next);
 });
 
-router.post('/login', validateUserBody, validateCredentials, (req, res) => {
-    // res.end('implement login, please!');
-    let { username, password } = req.body
-    Users.findBy({ username })
-        .then(([user]) => {
-            if (user && bcrypt.compareSync(password, user.password)) {
-                const token = tokenBuilder(user)
-                res.status(200).json({
-                    message: `welcome, ${username}`,
-                    token: token,
-                })
-            } else {
-                res.status(401).json({
-                    message: 'invalid credentials'
-                })
-            }
-        })
-        .catch((err) => {
-            res.status(500).json(err.message)
-        })
+
+router.post("/login", validateUserName, validateCredentials, (req, res, next) => {
+  let { username, password, user_id } = req.dbUser;
+  if (bcrypt.compareSync(req.user.password, password)) {
+    const token = tokenBuilder({
+    user_id,
+    username
+    });
+    res.status(200).json({
+      message: `Welcome back ${username}`,
+      user_id,
+      username,
+      token
+    })
+  } else {
+    next({status: 401, message: 'Invalid credentials'});
+  }
 });
 
 module.exports = router;

@@ -1,4 +1,4 @@
-# POTLUCK BACKEND :)
+# BW POTLUCK 10/2021 BACKEND 
 
 ##  https://potluck-planner-2.herokuapp.com/
 
