@@ -12,12 +12,13 @@ const cors = require('cors')
 //   const [newUserObject] = await db('users').insert(user, ['user_id', 'username', 'password'])
 //   return newUserObject // { user_id: 7, username: 'foo', password: 'xxxxxxx' }
 // }
-const authRouter = require('./auth/auth-router')
+const authRouter = require('./auth/auth-router');
+const usersRouter = require('./users/users-router');
 
-const server = express()
-server.use(express.json())
-server.use(helmet())
-server.use(cors())
+const server = express();
+server.use(express.json());
+server.use(helmet());
+server.use(cors());
 
 // server.get('/api/users', async (req, res) => {
 //   res.json(await getAllUsers())
@@ -26,11 +27,12 @@ server.use(cors())
 // server.post('/api/users', async (req, res) => {
 //   res.status(201).json(await insertUser(req.body))
 // })
-server.use('/api/auth', authRouter)
+server.use('/api/auth', authRouter);
+server.use('/api/users', usersRouter);
 
 server.get('/', (req, res) => {
   res.json({ message: 'Api is working add a route to see more' });
-  console.log('api is working');
+  console.log('api is working ;-)');
 });
 
 
@@ -41,4 +43,4 @@ server.use((err, req, res, next) => { // eslint-disable-line
   });
 });
 
-module.exports = server
+module.exports = server;
