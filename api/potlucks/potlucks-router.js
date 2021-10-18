@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { restricted, validateUserName } = require("../auth/auth-middleware");
+const { restricted } = require("../auth/auth-middleware");
 const Potlucks = require("./potlucks-model");
 
 const {
