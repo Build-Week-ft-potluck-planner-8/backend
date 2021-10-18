@@ -50,13 +50,13 @@ async function getUserPotlucks(user_id) {
             potluck_date: potluck.potluck_date,
             potluck_time: potluck.potluck_time,
             potluck_location: potluck.potluck_location
-        })
-    })
+        });
+    });
     return {
         user_id: user_id,
         username: user.username,
         potlucks: userPotlucks
-    }
+    };
 }
 
 async function getOrganizerPotlucks(organizer) {
