@@ -47,3 +47,4 @@ describe('[POST] /api/auth/login', () => {
         expect(res.status).toBe(422);
     });
 });
+
