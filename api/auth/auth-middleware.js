@@ -33,7 +33,7 @@ const validateUserName = (req, res, next) => {
         password.trim() === ''
     ) {
         next({
-            status: 401,
+            status: 422,
             message: 'Username and password are required'
         });
     } else {
