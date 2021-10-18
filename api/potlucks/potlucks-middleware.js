@@ -30,7 +30,7 @@ const validatePotluckBody = (req, res, next) => {
     }
 };
 
-const checkNameAvailable = async (req, res, next) => {
+const checkPotluckNameUnique = async (req, res, next) => {
     const { potluck_name } = req.potluck;
     const [ potluck ] = await Potlucks.getPotluckBy({ potluck_name });
     if (potluck) {
@@ -44,6 +44,6 @@ const checkNameAvailable = async (req, res, next) => {
 };
 
 module.exports = {
-    checkNameAvailable,
+    checkPotluckNameUnique,
     validatePotluckBody
 };
