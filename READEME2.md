@@ -409,7 +409,6 @@
     "potluck_time": "12:00:00 this format REQUIRED",
     "potluck_location": "string",
     "organizer": "integer"
-
 }
 ```
 </details>

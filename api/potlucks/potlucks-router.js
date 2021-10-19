@@ -66,8 +66,8 @@ router.delete('/:id/foods', restricted, (req, res, next) => {
 });
 
 //create Potluck
-router.post('/', restricted, checkPotluckNameUnique,
-validatePotluckBody, (req, res, next) => {
+router.post('/', restricted, validatePotluckBody, checkPotluckNameUnique,
+(req, res, next) => {
     Potlucks.createPotluck(req.potluck)
     .then(newPotluck => {
         res.status(201).json(newPotluck);
