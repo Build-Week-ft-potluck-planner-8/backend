@@ -149,4 +149,4 @@ module.exports = {
     createPotluck,
     editPotluck,
     deletePotluck
-}
+};
