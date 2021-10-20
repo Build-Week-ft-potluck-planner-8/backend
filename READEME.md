@@ -5,8 +5,8 @@
 - [BW POTLUCK 10/2021 BACKEND](#bw-potluck-102021-backend)
   - [Author](#author)
   - [Base URL](#base-url)
-    - [----------------  ENDPOINTS  --------------------](#------------------endpoints----------------------)
-    - [**-----LOGIN and REGISTER-----**](#-----login-and-register-----)
+  - [----------------  ENDPOINTS  --------------------](#------------------endpoints----------------------)
+  - [**-----LOGIN and REGISTER-----**](#-----login-and-register-----)
     - [[POST] /api/auth/register  -- creates a new user](#post-apiauthregister-----creates-a-new-user)
     - [[POST] /api/auth/login  -- logs in an existing user](#post-apiauthlogin-----logs-in-an-existing-user)
   - [**-----USERS-----**](#-----users-----)
@@ -41,9 +41,9 @@
 
 
 
-### ----------------  ENDPOINTS  -------------------- 
+## ----------------  ENDPOINTS  -------------------- 
 
-### **-----LOGIN and REGISTER-----**
+## **-----LOGIN and REGISTER-----**
 
 ### [POST] /api/auth/register  -- creates a new user
 
