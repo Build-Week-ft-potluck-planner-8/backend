@@ -1,4 +1,17 @@
 # Backend Setup Using Express
+
+## TOC
+- [Backend Setup Using Express](#backend-setup-using-express)
+  - [TOC](#toc)
+  - [Intro to Markdown of README.md](#intro-to-markdown-of-readmemd)
+  - [Install base Dependencies](#install-base-dependencies)
+  - [KNEX files](#knex-files)
+  - [Install base FILES & FOLDERS](#install-base-files--folders)
+  - [Build out base files guts](#build-out-base-files-guts)
+  - [Set Up Debugger](#set-up-debugger)
+  - [TEST Server working with stubbed router & model](#test-server-working-with-stubbed-router--model)
+  - [Adding DATA & knex Migrations](#adding-data--knex-migrations)
+  - [use sql editor to build out the Model Functions.](#use-sql-editor-to-build-out-the-model-functions)
 ## Intro to Markdown of README.md
     
     - [link](https://www.youtube.com/watch?v=pTCROLZLhDM)

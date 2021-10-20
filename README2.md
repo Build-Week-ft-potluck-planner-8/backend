@@ -1,4 +1,7 @@
-# Build Week Scaffolding for Node and PostgreSQL
+## Potluck (Backend Details)
+
+![image](../backend/assets/Login-background.jpg)
+## Build Week Scaffolding for Node and PostgreSQL
 
 ## Video Tutorial
 

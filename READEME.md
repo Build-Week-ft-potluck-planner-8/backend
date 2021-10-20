@@ -1,6 +1,43 @@
 # BW POTLUCK 10/2021 BACKEND 
 
-##  https://bw-potluck-102021.herokuapp.com/
+![image](../backend/assets/Login-background.jpg)
+
+- [BW POTLUCK 10/2021 BACKEND](#bw-potluck-102021-backend)
+  - [Author](#author)
+  - [Base URL](#base-url)
+    - [----------------  ENDPOINTS  --------------------](#------------------endpoints----------------------)
+    - [**-----LOGIN and REGISTER-----**](#-----login-and-register-----)
+    - [[POST] /api/auth/register  -- creates a new user](#post-apiauthregister-----creates-a-new-user)
+    - [[POST] /api/auth/login  -- logs in an existing user](#post-apiauthlogin-----logs-in-an-existing-user)
+  - [**-----USERS-----**](#-----users-----)
+    - [[GET] /api/users  -- gets list of users](#get-apiusers-----gets-list-of-users)
+    - [[GET] /api/users/:id  -- gets user by ID](#get-apiusersid-----gets-user-by-id)
+    - [[GET] /api/users/:id/potlucks  -- gets all the potlucks a user has been invited to](#get-apiusersidpotlucks-----gets-all-the-potlucks-a-user-has-been-invited-to)
+    - [[GET] /api/users/:organizer_id/organizer_potlucks  -- gets all the potlucks a user has created](#get-apiusersorganizer_idorganizer_potlucks-----gets-all-the-potlucks-a-user-has-created)
+    - [[PUT] /api/users/:id  -- edit existing user](#put-apiusersid-----edit-existing-user)
+  - [**-----POTLUCKS-----**](#-----potlucks-----)
+    - [[GET] /api/potlucks  -- get an array of potlucks](#get-apipotlucks-----get-an-array-of-potlucks)
+    - [[GET] /api/potlucks/:id  -- gets potluck by ID](#get-apipotlucksid-----gets-potluck-by-id)
+    - [[GET] /api/potlucks/:id/users  -- gets the users for a specific potluck](#get-apipotlucksidusers-----gets-the-users-for-a-specific-potluck)
+    - [[GET] /api/potlucks/:id/foods  -- gets the foods for a specific potluck](#get-apipotlucksidfoods-----gets-the-foods-for-a-specific-potluck)
+    - [[POST] /api/potlucks/:id/users  -- adds a user to a potluck](#post-apipotlucksidusers-----adds-a-user-to-a-potluck)
+    - [[POST] /api/potlucks/:id/foods  -- adds a food item to a potluck](#post-apipotlucksidfoods-----adds-a-food-item-to-a-potluck)
+    - [[POST] /api/potlucks  -- creates a new potluck](#post-apipotlucks-----creates-a-new-potluck)
+    - [[PUT] /api/potlucks/:id  -- updates an existing potluck](#put-apipotlucksid-----updates-an-existing-potluck)
+    - [[DELETE] /api/potlucks/:id  -- delete existing potluck](#delete-apipotlucksid-----delete-existing-potluck)
+    - [[DELETE] /api/potlucks/:potluck_food_id/foods  -- delete existing food item in a potluck](#delete-apipotluckspotluck_food_idfoods-----delete-existing-food-item-in-a-potluck)
+  - [**-----FOODS-----**](#-----foods-----)
+    - [[GET] /api/foods  -- get an array of all foods](#get-apifoods-----get-an-array-of-all-foods)
+    - [[GET] /api/foods/:id  -- gets food by ID](#get-apifoodsid-----gets-food-by-id)
+    - [[POST] /api/foods  -- create new food item](#post-apifoods-----create-new-food-item)
+    - [[PUT] /api/foods/:id  -- update existing food item](#put-apifoodsid-----update-existing-food-item)
+    - [[DELETE] /api/foods/:id  -- delete existing food item](#delete-apifoodsid-----delete-existing-food-item)
+
+## Author
+  - Rick Mansfield Full Stack Web Dev & Computer Science Engineer [Portfolio Link](https://rickmansfield.github.io/PortfolioWRM2021v2/)
+    - 
+## Base URL  
+- https://bw-potluck-102021.herokuapp.com/
 
 
 
