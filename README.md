@@ -1,7 +1,7 @@
 # BW POTLUCK 10/2021 BACKEND 
 
-![image](../backend/assets/Background.jpg)
-- ![image](../backend/assets/Background.jpg)
+![image](https://barelyadventist.com/wp-content/uploads/2019/01/potluck-clipart-dish-chinese-5.jpg)
+
 
 - [BW POTLUCK 10/2021 BACKEND](#bw-potluck-102021-backend)
   - [Author](#author)
