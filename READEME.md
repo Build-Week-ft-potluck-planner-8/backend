@@ -1,6 +1,6 @@
 # BW POTLUCK 10/2021 BACKEND 
 
-![image](../backend/assets/Login-background.jpg) 
+![image](../backend/assets/Background.jpg)
 
 - [BW POTLUCK 10/2021 BACKEND](#bw-potluck-102021-backend)
   - [Author](#author)
