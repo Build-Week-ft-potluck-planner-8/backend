@@ -32,7 +32,7 @@ server.use(cors());
 server.use('/api/auth', authRouter);
 server.use('/api/users', usersRouter);
 server.use('/api/potlucks', potlucksRouter);
-server.use('/api/foods');
+server.use('/api/foods', foodsRouter);
 
 server.get('/', (req, res) => {
   res.json({ message: 'Api is working add a route to see more' });
