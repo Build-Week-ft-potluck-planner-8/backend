@@ -5,6 +5,7 @@
 
 - [BW POTLUCK 10/2021 BACKEND](#bw-potluck-102021-backend)
   - [Author](#author)
+  - [NOTE of IMPROVEMENT...](#note-of-improvement)
   - [Base URL](#base-url)
   - [----------------  ENDPOINTS  --------------------](#------------------endpoints----------------------)
   - [**-----LOGIN and REGISTER-----**](#-----login-and-register-----)
@@ -38,6 +39,8 @@
   - Rick Mansfield 
     - Full Stack Web Dev & Computer Science Engineer 
     - [Portfolio Link](https://rickmansfield.github.io/PortfolioWRM2021v2/)
+## NOTE of IMPROVEMENT...
+-thinking of doing this project yourself? Please notice that this was a Lambda School project. My solution is one of many possible. BEFORE you decide to use my solution know that it creates a single giant list that in it's present condition permits any user to update. In a real world app the project would need to be take father and prevent any user from updating the community foods list. 
 ## Base URL  
 - https://bw-potluck-102021.herokuapp.com/
 

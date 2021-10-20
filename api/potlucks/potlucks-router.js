@@ -83,7 +83,7 @@ router.put('/', restricted, validatePotluckBody, (req, res, next) => {
     .catch(next);
 });
 //delete Potluck
-router.delete('/', restricted, (req, res, next) => {
+router.delete('/:id', restricted, (req, res, next) => {
     Potlucks.deletePotluck(req.params.id)
     .then(deleted => {
         res.status(200).json(deleted);
