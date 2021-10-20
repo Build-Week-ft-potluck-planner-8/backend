@@ -1,6 +1,7 @@
 # BW POTLUCK 10/2021 BACKEND 
 
 ![image](../backend/assets/Background.jpg)
+- ![image](../backend/assets/Background.jpg)
 
 - [BW POTLUCK 10/2021 BACKEND](#bw-potluck-102021-backend)
   - [Author](#author)
@@ -34,8 +35,9 @@
     - [[DELETE] /api/foods/:id  -- delete existing food item](#delete-apifoodsid-----delete-existing-food-item)
 
 ## Author
-  - Rick Mansfield Full Stack Web Dev & Computer Science Engineer [Portfolio Link](https://rickmansfield.github.io/PortfolioWRM2021v2/)
-    - 
+  - Rick Mansfield 
+    - Full Stack Web Dev & Computer Science Engineer 
+    - [Portfolio Link](https://rickmansfield.github.io/PortfolioWRM2021v2/)
 ## Base URL  
 - https://bw-potluck-102021.herokuapp.com/
 
