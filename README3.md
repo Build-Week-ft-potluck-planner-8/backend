@@ -14,7 +14,7 @@
   - [use sql editor to build out the Model Functions.](#use-sql-editor-to-build-out-the-model-functions)
 ## Intro to Markdown of README.md
     
-    - [link](https://www.youtube.com/watch?v=pTCROLZLhDM)
+  - [Click here for video](https://www.youtube.com/watch?v=pTCROLZLhDM)
   
 ## Install base Dependencies 
 1. npm i node
