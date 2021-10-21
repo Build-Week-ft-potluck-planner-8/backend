@@ -75,7 +75,7 @@ router.post('/', restricted, validatePotluckBody, checkPotluckNameUnique,
     .catch(next);
 });
 //edit potluck
-router.put('/', restricted, validatePotluckBody, (req, res, next) => {
+router.put('/:id', restricted, validatePotluckBody, (req, res, next) => {
     Potlucks.editPotluck(req.params.id, req.potluck)
     .then(updated => {
         res.status(200).json(updated);
@@ -92,3 +92,9 @@ router.delete('/:id', restricted, (req, res, next) => {
 });
 
 module.exports = router;
+
+
+
+
+
+
