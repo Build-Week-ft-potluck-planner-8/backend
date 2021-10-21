@@ -57,6 +57,7 @@
 
 ## Install base FILES & FOLDERS
 Here you are scafolding the base Express aplication then worry about database items
+
 11. Root folder files
     1.  chart.drawio
     2.  index.js
@@ -84,7 +85,7 @@ Here you are scafolding the base Express aplication then worry about database it
     4.  add debugger to gitignore file
         1.  on last line of .gitignore add ".vscode"
     5.  press f5 to start debugger
-    6.  remember to restart it after each code change. 
+    6.  remember to restart it after each code change. if you didn't install the nodemon auto start. For windows it's better not to use the nodemon autorestart on your debugger. It's ok to use it for npm run start  or run sever but not for the debugger. 
 
 ## TEST Server working with stubbed router & model
 17. stub out model.js file with something simple example:
@@ -95,11 +96,12 @@ async function getRecipeById(recipe_id){
 module.exports = {getRecipeById};
 ```
 ## Adding DATA & knex Migrations
+remembr ... migrations is just your tables & their schema getting pushed to sqlite, postgress or heroku it has nothing to do with your regular code getting pushed to git hub. 
 1. Create data folder in root folder
 2. Add & build out __db-config.js__ in __data__ folder
 3. npx knex migrate:make initial-migration
 4. Go to the newly create migrations js file and build it out. They can be huge. take your time
-5. creat __seeds__ folder in the __data__ folder
+5. IF you use seeds...creat __seeds__ folder in the __data__ folder
 6. inside __seeds__ add __01-cleanup.js__ (should match package.json) & build it out
     ```javascript
     const {clean} = require('knex-cleaner');
